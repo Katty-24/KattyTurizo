@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Document{% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('index') }}">INICIO</a>
+        <a href="{{ url_for('Acercademi')}}">Acerca de mí</a>
+        <a href="{{ url_for('contacto') }}">Contacto</a>
+        <a href="{{ url_for('Portafolio') }}">Portafolio</a>
+    </nav>
+   
+    
+
+{% block body %} 
+
+
+
+{% endblock %}
+
+
+</body>
+</html>

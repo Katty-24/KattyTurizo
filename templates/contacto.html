@@ -1,0 +1,47 @@
+{% extends "plantilla.html" %}
+
+{% block body %}
+
+    <br><br><br><br><h1 class="center">CONTÁCTAME</h1>
+    <nav>
+        <ul>
+            <li><a href="http://127.0.0.1:5000/portafolio">Portafolio</a></li>
+            <li><a href="http://127.0.0.1:5000/Acercademi">Acerca de mí</a></li>
+            <li><a href="http://127.0.0.1:5000/">Inicio</a></li>
+        </ul>
+    </nav>
+    <center>
+    <div class="continuar">
+        <form action="/mensaje"  method="post">
+            <div class="row">
+                <div class="col">
+                    <label for="nombres">Nombres</label>
+                </div>
+                <div class="coll">
+                    <input type="text" id="nombres" name="Nombres" placeholder="Ingresar Nombre" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="correo">Correo Electrónico</label>
+                </div>
+                <div class="coll">
+                    <input type="email" id="correo" name="Correo" placeholder="Ingresar Correo" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="mensaje">Mensaje</label>
+                </div>
+                <div class="coll">
+                    <textarea name="Mensaje" id="mensaje" placeholder="Escribir un mensaje" style="height: 100px;" required></textarea>
+                </div>
+            </div>
+            <br>
+                <button>Enviar Mensaje</button>
+            
+        </form>
+    </div>
+    </center>
+    
+{% endblock %} 
